@@ -3,6 +3,7 @@ import Header from "./Components/Header/Header.jsx";
 import Learn from './Pages/Learn/Learn'
 import Manager from './Pages/Manager/Manager'
 import { BrowserRouter, Route, Switch, useLocation } from "react-router-dom";
+import {editWord, addWord, removeWord} from './Utils/functions'
 
 
 function App() {
@@ -12,13 +13,10 @@ let data = [{engName: "Babysitter", hebName: "שמרתף"}, {engName:"Junk food"
 // {engName: "Confetti", hebName: "פתיתונים"}
 ]
 
-const removeWord = (word, words) => {
-  let i  = words.indexOf(word)
-  words.splice(i,1)
-}
-
-
-
+// const removeWord = (word, words) => {
+//   let i  = words.indexOf(word)
+//   words.splice(i,1)
+// }
 
   return (
     <React.Fragment>
@@ -26,7 +24,8 @@ const removeWord = (word, words) => {
       <Header/>
         <Switch>
           <Route exact path="/">
-             <Learn words= {data}  goal = {data.length} removeWord={removeWord}/>
+             {/* <Learn words= {data}  goal = {data.length} removeWord={removeWord}/> */}
+             <Learn words= {data}  goal = {data.length}/>
           </Route>
           <Route path="/manager" >
             <Manager words={data} removeWord={removeWord}/>
