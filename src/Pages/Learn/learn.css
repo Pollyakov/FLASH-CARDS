@@ -1,0 +1,48 @@
+section button #btn {
+    margin-right: 2em;
+    padding: 1em;
+    display: block;
+    border-radius: 5px;
+}
+
+.self-check{
+    font-size: 4vh;
+    margin-bottom: 1em; 
+}
+.self-check h1{
+display: block;
+color:rgb(5,0,0);
+margin-bottom: 0.3em;
+font-size: 1.2em;
+font-weight: 500;
+}
+
+button {
+    border-radius: 4px;
+    margin-right: 0.8em;
+    height: fit-content;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+.self-check button{
+    background-color:rgb(245, 219, 124);
+}
+
+.self-check button[name='yes']:hover {
+    background-color:rgb(24, 196, 101);
+}
+.self-check button[name='no']:hover {
+    background-color:red;
+}
+section .buttons-container{
+    display: flex;
+    justify-content: space-between;
+}
+section .buttons-container button{
+     width: 45%;
+     border:rgb(80, 80, 80);
+}
+section .buttons-container button:hover {
+    background-color: rgb(224, 108, 66);
+}
+

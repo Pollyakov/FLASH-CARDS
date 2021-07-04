@@ -1,0 +1,24 @@
+.header{
+    display:flex;
+    justify-content:space-evenly;
+    height: 8vh;
+    background-color: whitesmoke;
+  }
+
+  .header li {
+    list-style: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 14px;
+  }
+
+  .header li a {
+    text-decoration: none;
+    padding: 18px;
+   /* color:rgb(184, 65, 65); */
+   color:rgb(224, 108, 66)
+  }
+  
+  .header li a:hover{
+    border:  solid 4px rgb(66,87,178);
+  }
