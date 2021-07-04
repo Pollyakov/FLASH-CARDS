@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Card from '../../Components/Card/Card'
 import ProgressBar from '../../Components/ProgressBar/ProgressBar';
+import {removeWord} from '../../Utils/functions'
 import './learn.css'
 
 const Learn = (props)=> {
@@ -30,7 +31,7 @@ const Learn = (props)=> {
 
     const handleYesButton = ()=> {
      addPoint(); 
-     props.removeWord(randomWord,props.words)
+     removeWord(randomWord,props.words)
      setMyStyle({display: "none"})
    };
 
