@@ -1,0 +1,25 @@
+.word-wrapper h1 {
+    color: rgb(38, 74, 233);
+}
+
+
+  .word-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    animation: fadeIn 200ms ease-in;
+  }
+  .word-wrapper {
+    width: 60%;
+    margin: auto;
+    background:whitesmoke;
+    border-radius: 4px;
+    padding: 3vh;
+  }
+  .word-container {
+    box-shadow: 1px 1px 5px lightgray;
+    margin-bottom: 40px;
+    
+  }
